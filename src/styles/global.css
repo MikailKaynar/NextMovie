@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  .navLink {
+    @apply hover:bg-slate-700 p-2 transition-all ease-out rounded-sm;
+  }
+
+  html,
+  body {
+    @apply flex flex-col min-h-screen;
+  }
+
+  header {
+    @apply backdrop-blur-sm bg-black/40 w-full h-20 flex px-10;
+  }
+
+  header div {
+    @apply flex justify-between items-center w-full;
+  }
+
+  nav {
+    @apply flex gap-12 font-bold;
+  }
+
+  main {
+    @apply flex-grow flex justify-center;
+  }
+
+  main > div {
+    @apply w-full max-w-[1440px] px-[3%];
+  }
+
+  footer {
+    @apply bg-slate-600 w-full h-18 flex items-center justify-center text-white;
+  }
+}
+
+body {
+  background-color: black;
+  font-size: 16px;
+  color: whitesmoke;
+}
